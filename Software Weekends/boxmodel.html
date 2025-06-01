@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        .greenbox{
+            height:auto;
+            width: 300px;
+            color: rgb(250, 251, 251);
+            background-color: rgba(0, 255, 21, 0.606);
+            padding: 15px;
+        }
+
+         .greenbox img{
+            height: 200px;
+            width: 300px;
+        }
+
+
+        .redbox{
+            height: auto;
+            width: 200px;
+            color: rgb(250, 251, 251);
+            background-color: rgb(255, 17, 0);
+            padding: 15px;
+        }
+         .redbox img{
+            height: 200px;
+            width: 200px;
+        }
+
+        .bluebox{
+            height: auto;
+            width: 200px;
+            color: rgb(250, 251, 251);
+            background-color: blue;
+            padding: 15px;
+        }
+        .bluebox img{
+            height: 200px;
+            width: 200px;
+        }
+        .container{
+            height: 600px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            column-gap: 15px;
+
+          
+            background-color: aqua;
+        }
+
+         .container  .bluebox img{
+
+            
+         }
+    </style>
+
+</head>
+<body>
+
+
+
+    <div class="container">
+
+        <div class="bluebox">
+            <img src="images/superman-animated-gif.gif" alt="">
+      <h1> Ghana</h1>
+      <p>The Country rich in mineral resources</p>
+       </div>
+
+     <div class="greenbox">
+
+            <img src="images/superman-animated-gif.gif" alt="">
+      <h1> Ghana</h1>
+      <p>The Country rich in mineral resources</p>
+     
+
+    </div>
+      <div class="redbox">
+   
+            <img src="images/superman-animated-gif.gif" alt="">
+      <h1> Ghana</h1>
+      <p>The Country rich in mineral resources</p>
+     
+    
+    </div>
+
+
+    </div>
+    
+</body>
+</html>
