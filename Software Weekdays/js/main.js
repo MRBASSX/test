@@ -45,9 +45,25 @@ let notvote = "You cant vote go Home"
 console.log(age >= 18)
 age >= 18 ? console.log(vote) : console.log(notvote)
 
+
+let First = 9900;
+let second = 900;
+let third = 300;
+
+
+let firstGreat = First > second  && First > third ;
+let secondgreat  = second > First && second > third;
+let thirdgreat = third >First  && third > second ;
+
+firstGreat ? console.log("First is the biggest") :"";
+secondgreat ? console.log("Second is the biggest") : "";
+thirdgreat ? console.log("Third is the biggest") : "";
+
+
 // 2. Comparison Operator
 // == !=  ===  >= <=  >  < 
 // 3 .Logical Oprerator
+// && , ||, !
 // 4. incremental and Decremental Operator
 // 5. Arithmetic Operator
 
