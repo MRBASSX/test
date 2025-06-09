@@ -59,13 +59,65 @@ firstGreat ? console.log("First is the biggest") :"";
 secondgreat ? console.log("Second is the biggest") : "";
 thirdgreat ? console.log("Third is the biggest") : "";
 
+let i = 2;
+i++ //i = i +1  i = 2+1
+i++ //i = i +1  i = 3 +1
+i++  //i = i +1  i = 4 +1
+i++  //i = i +1  i = 5 +1
+i++  //i = i +1  i = 6+1
+i++ //i = i +1  i = 7+1
+i++  //i = i +1  i = 8+1
+i++  //i = i +1  i = 9+1
+console.log(i)
+
+
+let a = 2;
+a++ //a = a +1  a = 2+1
+a++ //a = a +1  a = 3 +1
+a++  //a = a +1  a = 4 +1
+a++  //a = a +1  a = 5 +1
+a++  //a = a +1  a = 6+1
+a++ //a = a +1  a = 7+1
+a++  //a = a +1  a = 8+1
+a++  //a = a +1  a = 9+1
+console.log(a)
+
+
+let b =  3
+
+b+=12 // b = b + 12   b = 3 + 12
+b-=12 // b = b - 12   b = 15 - 12
 
 // 2. Comparison Operator
 // == !=  ===  >= <=  >  < 
 // 3 .Logical Oprerator
 // && , ||, !
 // 4. incremental and Decremental Operator
+    // ++ and  -- ,+=, -=
 // 5. Arithmetic Operator
+//  +  , / , * , - , % , \
+
+let Test  = document.getElementById("software");
+// let element = document.createElement('div')
+console.log(Test)
+
+function Software(){
+
+    
+    console.log("Hi ,I am A function " )
+    alert("123")
+    Test.style.backgroundColor = "red";
+    Test.style.color = "white";
+    Test.style.fontSize = "120px";
+
+}
+
+
+
+
+
+Test.addEventListener("click",Software)
+
 
 
 
