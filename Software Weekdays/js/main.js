@@ -99,18 +99,26 @@ b-=12 // b = b - 12   b = 15 - 12
 
 let Test  = document.getElementById("send");
 let form  = document.getElementById("form");
+var formdata = new FormData(form)
 // let element = document.createElement('div')
 console.log(Test)
 
-function Software(){
-    console.log("Hi ,I am A function " )
-    alert("123")
-    Test.style.backgroundColor = "red";
-    Test.style.color = "white";
-    Test.style.fontSize = "120px";
-let formdata = new FormData(form)
-let data = formdata.fromEntries(formdata.entries);
-data.firstname
+function Software(event){
+ 
+    event.preventDefault();
+    let data = Object.fromEntries(formdata.entries);
+    console.log(data)
+
+    // console.log("Hi ,I am A function " )
+    // alert("123")
+    // Test.style.backgroundColor = "red";
+    // Test.style.color = "white";
+    // Test.style.fontSize = "120px";
+
+
+
+
+
 }
 
 
