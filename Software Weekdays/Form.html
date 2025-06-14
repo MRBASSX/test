@@ -12,10 +12,11 @@
 
     <div class="formContainer">
 
-        <form action="sports.html" method="post" class="form" id="form">
+        <form  action="" method="post" class="form" id="form">
 
-            <input type="text" name="firstname" id="firstname" placeholder="FirstName">
-            <input type="text" name="surname" id="surname" placeholder="Surname">
+            <input type="text" name="firstname" id="firstname" placeholder="FirstName" required>
+            <input type="text" name="surname" id="surname" placeholder="Surname" required>
+            <input type="email" name="email" id="email" placeholder="Email" required>
             <label for="">Tell Me About Yourself</label>
             <textarea name="" id="" cols="100" rows="12"></textarea>
             <label for="">Select Your Favourite Color</label>
@@ -38,18 +39,27 @@
             </div>
             <label for="">Gender</label>
             <div class="sel">
-                <div class=""> <label for="">Male</label><input type="radio" name="gender" id="male" value="Male"></div>
-                <div class=""> <label for="">Female</label><input type="radio" name="gender" id="male" value="Female">
+                <div class=""> <label for="">Male</label><input type="radio" name="gender" id="gender" value="Male"></div>
+                <div class=""> <label for="">Female</label><input type="radio" name="gender" id="gender" value="Female">
                 </div>
-                <div class=""> <label for="">Other</label><input type="radio" name="gender" id="male" value="Other">
+                <div class=""> <label for="">Other</label><input type="radio" name="gender" id="gender" value="Other">
                 </div>
             </div>
-            <input type="submit" value="Send" id="send">
+           
+         <input type="submit" value="Send"  id="send" >
 
         </form>
 
     </div>
 
+
+
+<script src="js/main.js"></script>
+<script>
+
+
+// GetMyData();
+</script>
 
 
 

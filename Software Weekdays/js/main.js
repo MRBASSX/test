@@ -97,17 +97,22 @@ b-=12 // b = b - 12   b = 15 - 12
 // 5. Arithmetic Operator
 //  +  , / , * , - , % , \
 
-let Test  = document.getElementById("send");
+let send  = document.getElementById("send");
 let form  = document.getElementById("form");
-var formdata = new FormData(form)
-// let element = document.createElement('div')
-console.log(Test)
 
-function Software(event){
+
+function GetMyData(event){
  
-    event.preventDefault();
-    let data = Object.fromEntries(formdata.entries);
-    console.log(data)
+   event.preventDefault();
+    // alert("Hi")
+    var formdata = new FormData(form)
+    console.log(formdata.entries())
+   var data   = Object.fromEntries(formdata.entries())
+   console.log(data)
+
+ console.log(data.firstname)
+  console.log(data.surname)
+  console.log(data.color)
 
     // console.log("Hi ,I am A function " )
     // alert("123")
@@ -116,16 +121,13 @@ function Software(event){
     // Test.style.fontSize = "120px";
 
 
-
-
-
 }
 
 
 
 
 
-Test.addEventListener("click",Software)
+send.addEventListener("click",GetMyData)
 
 
 
