@@ -1,0 +1,43 @@
+  .nav {
+
+            display: flex;
+            justify-content: space-around;
+            height: 70px;
+            background-color: black;
+            color: rgb(223, 224, 237);
+            font-size: 25px;
+
+        }
+
+        .bold {
+            font-size: 40px;
+        }
+
+        .footer {
+            display: flex;
+            justify-content: space-around;
+            height: auto;
+            background-color: black;
+            color: rgb(223, 224, 237);
+            font-size: 25px;
+        }
+
+        .f {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            row-gap: 15px;
+        }
+
+        .first {
+            display: flex;
+            column-gap: 15px;
+            list-style: none;
+
+        }
+
+        .second {
+            display: flex;
+            column-gap: 15px;
+            list-style: none;
+        }
