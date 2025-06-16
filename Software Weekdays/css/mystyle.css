@@ -104,4 +104,17 @@ input{
   height: 30px;
   border: 1px solid orange;
   border-radius: 5px;
+
+  
+}
+
+#firstname{
+
+   text-align: center;
+  height: 30px;
+  border: 1px solid orange;
+  border-radius: 5px;
+
+ 
+
 }
