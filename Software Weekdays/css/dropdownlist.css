@@ -1,0 +1,67 @@
+*{
+    margin: 0px;
+     list-style: none;
+    
+}
+
+.child{
+    display: none;
+}
+
+.parent:hover .child{
+    display: block;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    color: rgb(8, 115, 208);
+    height: 100px;
+
+}   
+
+.list{
+    display: none;
+    
+    
+}
+.menu li:hover .list{
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px ;
+    position: absolute;
+    width: 150px;
+    justify-content: center;
+    text-align: center;
+    border:1px solid rgb(65, 46, 236) ;
+    padding-inline-start:0px;
+    padding: 10px;
+    
+}
+
+
+
+.list2{
+    display: none;
+    
+    
+} 
+.list li:hover .list2{
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px ;
+    position: absolute;
+    width: 150px;
+    justify-content: center;
+    text-align: center;
+    border:1px solid rgb(65, 46, 236) ;
+    padding-inline-start:0px;
+    padding: 10px;
+    
+}
+
+.list li:hover{
+    background-color: rgb(65, 203, 6);  
+}
