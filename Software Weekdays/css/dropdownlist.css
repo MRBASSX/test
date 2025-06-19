@@ -31,7 +31,7 @@
     display: flex;
     flex-direction: column;
     row-gap: 15px ;
-    position: absolute;
+    /* position: absolute; */
     width: 150px;
     justify-content: center;
     text-align: center;
@@ -66,3 +66,27 @@
     background-color: rgb(65, 203, 6);  
 }
 
+
+
+.box{
+    background-color: brown;
+    height: 500px;
+}
+.red{
+    width: 150px;
+    height: 150px;
+    background-color: red;
+}
+
+.blue{
+    width: 150px;
+    height: 150px;
+    background-color:blue;
+}
+
+.yellow{
+    width: 150px;
+    height: 150px;
+    background-color:yellow;
+    position: absolute;
+}
