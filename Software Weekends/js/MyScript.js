@@ -72,11 +72,23 @@ start +=  17 // start = start + 17
 start -=  70  // start = start - 70
 console.log(start)
 
-let Mubarack = 100;
-let Boadi = 200;
-let Asante = 300;
+let display = document.getElementById("textdisplay");
 
-let first  =  Mubarack > Boadi && Mubarack > Asante;
+let Mubarack = 900; 
+let Boadi = 500;
+let Asante = 800
+
+let first  =  (Mubarack > Boadi && Mubarack > Asante);
+
+let second = Boadi > Mubarack && Boadi > Asante;
+
+let  third  = Asante > Mubarack &&  Asante > Boadi;
+
+first ? display.innerHTML = "Mubarack Has The Biggest Number" : console.log("")
+
+second ? display.innerHTML = "Boadi  Has The Biggest Number": console.log("")
+
+third ? display.innerHTML = "Asante Has The Biggest Number" : console.log("")
 
 
 
