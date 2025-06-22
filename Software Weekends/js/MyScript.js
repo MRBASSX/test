@@ -32,8 +32,9 @@
 
 // console.log(12222)
 
-let MyFirstNumber = 100;
-let MySecondNumber = 200;
+let MyFirstNumber = 900;
+let MySecondNumber = 800;
+let MyThirdNumber = 600;
 
 let Add = MyFirstNumber + MySecondNumber;
 let Mult = MyFirstNumber * MySecondNumber;
@@ -44,3 +45,23 @@ console.log(Add)
 console.log(Mult)
 console.log(Div)
 console.log(Sub)
+
+let first  = MyFirstNumber > MySecondNumber && MyFirstNumber >MyThirdNumber;
+let second = MySecondNumber > MyFirstNumber && MySecondNumber > MyThirdNumber
+let third = MyThirdNumber > MyFirstNumber && MyThirdNumber > MySecondNumber;
+first ? console.log("First Is Great") : console.log("")
+second ? console.log("Second Is Great") : console.log("")
+third ? console.log("Third Is Great") : console.log("")
+
+// let Number = 3;
+// let EvenOrOdd = Number % 2
+
+// console.log(EvenOrOdd)
+
+// EvenOrOdd == 0 ? console.log("Is Even") : console.log("Is Odd")
+
+// false  ? console.log("They are Equal and Datatype is Similar") : console.log("They are not Equal")
+
+// console.log(test)
+
+// || && !
