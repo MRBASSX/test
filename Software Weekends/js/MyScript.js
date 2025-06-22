@@ -72,6 +72,16 @@ start +=  17 // start = start + 17
 start -=  70  // start = start - 70
 console.log(start)
 
+let Mubarack = 100;
+let Boadi = 200;
+let Asante = 300;
+
+let first  =  Mubarack > Boadi && Mubarack > Asante;
+
+
+
+
+
 
 
 
