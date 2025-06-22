@@ -32,26 +32,26 @@
 
 // console.log(12222)
 
-let MyFirstNumber = 900;
-let MySecondNumber = 800;
-let MyThirdNumber = 600;
+// let MyFirstNumber = 900;
+// let MySecondNumber = 800;
+// let MyThirdNumber = 600;
 
-let Add = MyFirstNumber + MySecondNumber;
-let Mult = MyFirstNumber * MySecondNumber;
-let Div = MyFirstNumber / MySecondNumber;
-let Sub = MyFirstNumber - MySecondNumber;
+// let Add = MyFirstNumber + MySecondNumber;
+// let Mult = MyFirstNumber * MySecondNumber;
+// let Div = MyFirstNumber / MySecondNumber;
+// let Sub = MyFirstNumber - MySecondNumber;
 
-console.log(Add)
-console.log(Mult)
-console.log(Div)
-console.log(Sub)
+// console.log(Add)
+// console.log(Mult)
+// console.log(Div)
+// console.log(Sub)
 
-let first  = MyFirstNumber > MySecondNumber && MyFirstNumber >MyThirdNumber;
-let second = MySecondNumber > MyFirstNumber && MySecondNumber > MyThirdNumber
-let third = MyThirdNumber > MyFirstNumber && MyThirdNumber > MySecondNumber;
-first ? console.log("First Is Great") : console.log("")
-second ? console.log("Second Is Great") : console.log("")
-third ? console.log("Third Is Great") : console.log("")
+// let first  = MyFirstNumber > MySecondNumber && MyFirstNumber >MyThirdNumber;
+// let second = MySecondNumber > MyFirstNumber && MySecondNumber > MyThirdNumber
+// let third = MyThirdNumber > MyFirstNumber && MyThirdNumber > MySecondNumber;
+// first ? console.log("First Is Great") : console.log("")
+// second ? console.log("Second Is Great") : console.log("")
+// third ? console.log("Third Is Great") : console.log("")
 
 // let Number = 3;
 // let EvenOrOdd = Number % 2
@@ -65,3 +65,11 @@ third ? console.log("Third Is Great") : console.log("")
 // console.log(test)
 
 // || && !
+
+
+let start = 10;
+start +=  17 // start = start + 17
+start -=  70  // start = start - 70
+console.log(start)
+
+
