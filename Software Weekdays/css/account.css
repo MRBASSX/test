@@ -1,0 +1,39 @@
+*{
+    margin: 0px;
+    list-style: none;
+}
+
+.menu{
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(8, 6, 6);
+    color:rgb(255, 254, 254);
+    height: 100px;
+    
+
+}
+.form fieldset{
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    width: 400px;
+}
+.login{
+    position:absolute;
+    right:0px;
+    display: none;
+     
+    
+}
+.register{
+    position:absolute;
+    right:0px;
+    display: none;
+}
+
+.swapDisplay{
+
+    display: flex;
+}

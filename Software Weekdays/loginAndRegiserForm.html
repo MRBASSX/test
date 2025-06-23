@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/account.css">
+    <title>RegisterLogin</title>
+</head>
+<body>
+<nav class="navigation">
+
+    <ul class="menu ">
+        <div class="logo">
+            <img src="images/Sonic-Animated.gif" alt="" height="70" width="70">
+        </div>
+        <li>Home</li>
+        <li>Shop</li>
+        <li>Contact</li>
+        <li>About</li>
+        <li id="account">Account</li>
+    </ul>
+</nav>
+
+<div class="login" id="login">
+ <form action="" class="form">
+ <fieldset>
+    <legend>SignIn</legend>
+  <input type="text" name="username" id="username" placeholder="Username">
+  <input type="password" name="password" id="password" placeholder="Password">
+  <input type="submit" value="Login">
+  <div class="NoAccount">Dont Have An Account Yet <b id="backregister">Regiter</b></div>
+ </fieldset>
+ </form>
+</div>
+
+
+<div class="register" id="register">
+<form action="" class="form">
+<fieldset>
+    <legend>SignUp</legend>
+  <input type="text" name="username" id="username" placeholder="Username">
+  <input type="password" name="password" id="password" placeholder="password">
+   <input type="password" name="Cpassword" id="Cpassword" placeholder="Cpassword">
+  <input type="submit" value="Register">
+  <div class="NoAccount">Already Have An Account ? <b id="backlogin">Login</b></div>
+ </fieldset>
+</form>
+</div>
+ 
+    <script src="js/account.js"></script>
+</body>
+</html>
