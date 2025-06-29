@@ -67,28 +67,42 @@
 // || && !
 
 
-let start = 10;
-start +=  17 // start = start + 17
-start -=  70  // start = start - 70
-console.log(start)
+// let start = 10;
+// start +=  17 // start = start + 17
+// start -=  70  // start = start - 70
+// console.log(start)
 
-let display = document.getElementById("textdisplay");
+// let display = document.getElementById("textdisplay");
 
-let Mubarack = 900; 
-let Boadi = 500;
-let Asante = 800
+// let Mubarack = 900; 
+// let Boadi = 500;
+// let Asante = 800
 
-let first  =  (Mubarack > Boadi && Mubarack > Asante);
+// let first  =  (Mubarack > Boadi && Mubarack > Asante);
 
-let second = Boadi > Mubarack && Boadi > Asante;
+// let second = Boadi > Mubarack && Boadi > Asante;
 
-let  third  = Asante > Mubarack &&  Asante > Boadi;
+// let  third  = Asante > Mubarack &&  Asante > Boadi;
 
-first ? display.innerHTML = "Mubarack Has The Biggest Number" : console.log("")
+// first ? display.innerHTML = "Mubarack Has The Biggest Number" : console.log("")
 
-second ? display.innerHTML = "Boadi  Has The Biggest Number": console.log("")
+// second ? display.innerHTML = "Boadi  Has The Biggest Number": console.log("")
 
-third ? display.innerHTML = "Asante Has The Biggest Number" : console.log("")
+// third ? display.innerHTML = "Asante Has The Biggest Number" : console.log("")
+
+let cover = document.getElementById("cover");
+
+cover.onclick = function  () {
+    
+
+    cover.src = "images/1200px-Youth-soccer-indiana.jpg"
+
+    
+}
+
+
+
+
 
 
 
