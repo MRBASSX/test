@@ -1,5 +1,7 @@
 
 
+// Write a program that checks if soneone is present or not
+// Write a program share money base on age ,older get higher amount
 // 1 .Data @what the problem is about
 let age =  17;
 
@@ -18,5 +20,19 @@ if(cantVote){
 }else{
 
     console.log("You can vote")
+}
+
+let person = 1;
+
+let present = person == 1;
+
+if (present) {
+
+    console.log("Someone in the Room")
+    
+} else {
+
+    console.log("No One in the Room")
+    
 }
     
