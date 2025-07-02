@@ -22,6 +22,7 @@ if(cantVote){
     console.log("You can vote")
 }
 
+
 let person = 1;
 
 let present = person == 1;
