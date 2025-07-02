@@ -1,6 +1,6 @@
 
 
-// 1 . Data @what the problem is about
+// 1 .Data @what the problem is about
 let age =  17;
 
 // 2. Logic @true Or false
