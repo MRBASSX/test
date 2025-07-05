@@ -20,6 +20,7 @@
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
+
   
   
   
@@ -40,6 +41,9 @@
   }
   .img{
     height: 200px;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 1rem;
     
   }
 
@@ -48,6 +52,20 @@
     text-align: center;
     border: 1px solid gray;
     border-radius: 1rem;
+    flex-grow: 1;
+    margin: 10px;
+    background-color: aliceblue;
+    box-shadow: 0 0 100px 10px rgba(0, 0, 0, 1);
+    transition: all 0.3s ease-in-out;
+
+    &:hover{
+      transform: scale(1.05);
+      box-shadow: 0 0 200px 20px rgba(0, 0, 0, 1);
+      background-color: rgb(17, 170, 190);
+      color: white;
+    }
+    
+
   }
 
   .footer{
@@ -82,13 +100,20 @@
     padding-top: 15px;
     border: 1px solid gray;
     border-radius: 1rem;
+    box-shadow: 0 0 100px 10px rgba(0, 0, 0, 1);
+    transition: all 0.3s ease-in-out  ;
 
-    &:hover{
-
- background-color: rgb(13, 105, 185);
- font-size: large;
-
+     &:hover{
+      transform: scale(1.05);
+      box-shadow: 0 0 200px 20px rgba(0, 0, 0, 1);
+      background-color: rgb(17, 170, 190);
+      color: white;
     }
+    &:active{
+      background-color: rgb(17, 170, 190);
+      color: white;
+      transform: scale(0.9);
+    } 
 
     
 
