@@ -95,11 +95,53 @@ let cover = document.getElementById("cover");
 cover.onclick = function  () {
     
 
-    cover.src = "images/1200px-Youth-soccer-indiana.jpg"
+    cover.src = "images/1200px-Youth-soccer-indiana.jpg";
 
-    
+    setInterval(() => {
+        cover.src = "images/product-1.jpg";
+    }, 10000);
+
+
+
+    setTimeout(() => {
+        cover.src = "images/1200px-Youth-soccer-indiana.jpg";
+    }, 10000);
+    setTimeout(() => {          
+        cover.src = "images/superman-animated-gif.gif";
+    }, 10000);
+    setTimeout(() => {
+        cover.src = "images/product-2.jpg";
+    }, 10000);
+    setTimeout(() => {
+        cover.src = "images/product-3.jpg";   
+    }, 10000);
+    setTimeout(() => {
+        cover.src = "images/product-4.jpg";
+    }, 10000);
 }
 
+
+setInterval(() => {
+        cover.src = "images/product-1.jpg";
+    }, 10000);
+
+
+
+    setTimeout(() => {
+        cover.src = "images/1200px-Youth-soccer-indiana.jpg";
+    }, 10000);
+    setTimeout(() => {          
+        cover.src = "images/superman-animated-gif.gif";
+    }, 10000);
+    setTimeout(() => {
+        cover.src = "images/product-2.jpg";
+    }, 10000);
+    setTimeout(() => {
+        cover.src = "images/product-3.jpg";   
+    }, 10000);
+    setTimeout(() => {
+        cover.src = "images/product-4.jpg";
+    }, 10000);
 
 
 
