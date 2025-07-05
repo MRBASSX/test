@@ -1,0 +1,70 @@
+*{
+    list-style: none;
+    text-decoration: none;
+    margin: 0px;
+}
+
+
+.child{
+    display: none;
+}
+
+
+.parent:hover .child{
+    display: flex;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 120px;
+    background-color: rgb(5, 21, 21);
+    color: aliceblue;
+    font-size: large;
+    box-shadow: inset 0px 0px 100px 10px rgb(190, 112, 112);
+
+}
+
+.list{
+    display: none;
+}
+
+
+.menu{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 120px;
+    background-color: rgb(5, 21, 21);
+    color: aliceblue;
+    
+
+   
+}
+.menu li{
+    
+     border-top:1px solid rgb(0, 255, 38) ;
+
+       &:hover{ 
+
+        border-top:1px solid red ;
+
+}
+
+}
+
+.menu li:hover .list{
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    row-gap: 15px;
+    background-color: rgb(5, 21, 21);
+    box-shadow: inset 0px 0px 100px 10px rgb(190, 112, 112);
+    padding-left: 0px;
+    padding: 40px;
+    cursor: auto;
+
+  
+    
+}
