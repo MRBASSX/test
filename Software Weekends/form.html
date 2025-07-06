@@ -8,18 +8,20 @@
 <style>
     .form{
         display: flex;
-        flex-direction: column;
-        max-width: 400px;
+        /* flex-direction: column; */
+        /* width:100vh; */
+        height: 600px;
         margin: 0 auto; 
-        padding: 20px;
+        padding: 40px;
         border: 1px solid #ccc;
         border-radius: 5px;
-        row-gap: 10px;
-        box-shadow: inset 0 0 200px 10px rgba(0,0,0,1);
+        box-shadow: inset 0 0 200px 30px rgba(0,0,0,1);
+        color: #e0ddddd7;
+        font-weight: bolder;
 
     }
     
-    .form input {
+    .form input,select {
         padding: 10px;
         border: 1px solid #ccc;
         border-radius: 5px;
@@ -39,7 +41,35 @@
         justify-content: center;
         align-items: center;
         height: 100vh;
-        background-color: #f8f9fa;
+       background-image: url("images/1200px-Youth-soccer-indiana.jpg");
+       background-repeat: no-repeat;
+       background-position: center;
+       background-color: rgb(19, 20, 20);
+       background-size: cover;
+    }
+    .right{
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto; 
+        padding: 40px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+       row-gap:10px;
+        box-shadow: inset 0 0 200px 30px rgba(0,0,0,1);
+        color: #e0ddddd7;
+        font-weight: bolder;
+    }
+    .left{
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto; 
+        padding: 40px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        row-gap: 10px;
+        box-shadow: inset 0 0 200px 30px rgba(0,0,0,1);
+        color: #e0ddddd7;
+        font-weight: bolder;
     }
 </style>
 
@@ -53,25 +83,72 @@
             <a href="form.html?code=3">qwerty</a> -->
 
 
-  <div class="main">
+<div class="main">
+    <fieldset>
+        <legend>Sports Hub</legend>
+        <form action="" method="post" id="form" class="form">
 
-      <form action="" method="post" id="form" class="form">
-        
-        <input type="text" name="firstname" id="firstname" placeholder="First Name" required>
-        <input type="email" name="email" id="email" placeholder="Email" required>
-        <input type="password" name="password" id="password" placeholder="Password" required>
-        <input type="time" name="time" id="time" placeholder="Time" required>
-        <input type="datetime-local" name="date" id="date" placeholder="Date" required>
-         <label for="">Gender</label>
-      <div class="gender">
-           Male:<input type="radio" name="gender" id="male" value="male">
-           Female:<input type="radio" name="gender" id="female" value="female">
-      </div>
-        <input type="submit" value="Send" id="send">
-       
-        
-    </form>
-  </div>
+
+            <div class="left">
+
+                <input type="text" name="firstname" id="firstname" placeholder="First Name" required>
+                <input type="email" name="email" id="email" placeholder="Email" required>
+                <input type="password" name="password" id="password" placeholder="Password" required>
+                <input type="time" name="time" id="time" placeholder="Time" required>
+                <input type="datetime-local" name="date" id="date" placeholder="Date" required>
+                 <input type="text" name="firstname" id="firstname" placeholder="First Name" required>
+                <input type="email" name="email" id="email" placeholder="Email" required>
+                <input type="password" name="password" id="password" placeholder="Password" required>
+                <input type="time" name="time" id="time" placeholder="Time" required>
+                <input type="datetime-local" name="date" id="date" placeholder="Date" required>
+            </div>
+             <div class="left">
+
+                <input type="text" name="firstname" id="firstname" placeholder="First Name" required>
+                <input type="email" name="email" id="email" placeholder="Email" required>
+                <input type="password" name="password" id="password" placeholder="Password" required>
+                <input type="time" name="time" id="time" placeholder="Time" required>
+                <input type="datetime-local" name="date" id="date" placeholder="Date" required>
+                 <input type="text" name="firstname" id="firstname" placeholder="First Name" required>
+                <input type="email" name="email" id="email" placeholder="Email" required>
+                <input type="password" name="password" id="password" placeholder="Password" required>
+                <input type="time" name="time" id="time" placeholder="Time" required>
+                <input type="datetime-local" name="date" id="date" placeholder="Date" required>
+            </div>
+
+
+            <div class="right">
+                <label for="Gender">Gender</label>
+                <div class="gender">
+                    Male:<input type="radio" name="gender" id="male" value="male">
+                    Female:<input type="radio" name="gender" id="female" value="female">
+                </div>
+                <label for="Gender">Favourite Colors</label>
+                <div class="favs">
+                    Red:<input type="checkbox" name="red" id="red" value="red">
+                    Green: <input type="checkbox" name="green" id="green" value="green">
+                    Yellow: <input type="checkbox" name="yellow" id="yellow" value="yellow">
+                    Blue:<input type="checkbox" name="blue" id="blue" value="blue">
+                </div>
+                <select name="country" id="country">
+                    <option selected disabled>Country</option>
+                    <option value="ghana">Ghana</option>
+                    <option value="togo">Togo</option>
+                    <option value="nigeria">Nigeria</option>
+                    <option value="ghana">Ghana</option>
+                    <option value="togo">Togo</option>
+                    <option value="nigeria">Nigeria</option>
+                </select>
+            
+                <textarea rows="15" cols="15">Tell Me About You</textarea>
+                <input type="submit" value="Send" id="send">
+            </div>
+
+
+
+        </form>
+    </fieldset>
+</div>
 
      
 
