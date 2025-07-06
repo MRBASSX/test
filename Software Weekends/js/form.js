@@ -16,7 +16,7 @@ send.onclick = function (event) {
     // console.log(FinalData.time)
     // console.log(FinalData.date)
 
-   fetch("https://jsonplaceholder.typicode.com/posts", {
+   fetch("https://jsonplaceholder.typicode.com/posts/HH", {
         method: "POST",
         body: JSON.stringify(FinalData),
         headers: {
