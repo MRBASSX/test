@@ -32,7 +32,15 @@
     }
     .form input[type="submit"]:hover {
         background-color: #218838;
-    }   
+    }  
+    
+    .main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f8f9fa;
+    }
 </style>
 
 </head>
@@ -45,7 +53,9 @@
             <a href="form.html?code=3">qwerty</a> -->
 
 
-    <form action="" method="post" id="form" class="form">
+  <div class="main">
+
+      <form action="" method="post" id="form" class="form">
         
         <input type="text" name="firstname" id="firstname" placeholder="First Name" required>
         <input type="email" name="email" id="email" placeholder="Email" required>
@@ -61,6 +71,7 @@
        
         
     </form>
+  </div>
 
      
 
