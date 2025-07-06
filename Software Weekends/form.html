@@ -4,6 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
+
+<style>
+    .form{
+        display: flex;
+        flex-direction: column;
+        max-width: 400px;
+        margin: 0 auto; 
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        row-gap: 10px;
+        box-shadow: inset 0 0 200px 10px rgba(0,0,0,1);
+
+    }
+    
+    .form input {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-shadow: inset 0 0 5px rgba(0,0,0,0.1);
+    }
+    .form input[type="submit"] {
+        background-color: #28a745;
+        color: white;
+        cursor: pointer;
+    }
+    .form input[type="submit"]:hover {
+        background-color: #218838;
+    }   
+</style>
+
 </head>
 <body>
 
@@ -14,13 +45,24 @@
             <a href="form.html?code=3">qwerty</a> -->
 
 
-    <form action="" method="post" id="form">
+    <form action="" method="post" id="form" class="form">
         
-        <input type="text" name="firstname" id="firstname">
-        <input type="password" name="password" id="password">
+        <input type="text" name="firstname" id="firstname" placeholder="First Name" required>
+        <input type="email" name="email" id="email" placeholder="Email" required>
+        <input type="password" name="password" id="password" placeholder="Password" required>
+        <input type="time" name="time" id="time" placeholder="Time" required>
+        <input type="datetime-local" name="date" id="date" placeholder="Date" required>
+         <label for="">Gender</label>
+      <div class="gender">
+           Male:<input type="radio" name="gender" id="male" value="male">
+           Female:<input type="radio" name="gender" id="female" value="female">
+      </div>
         <input type="submit" value="Send" id="send">
-
+       
+        
     </form>
+
+     
 
 
 
