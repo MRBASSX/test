@@ -120,55 +120,181 @@
 
 
 
-let firstnumber = parseInt(prompt("Input First Number"));
-let secondnumber = parseInt(prompt("Input Second Number"));
-let thirdnumber = parseInt(prompt("Input Third Number"));
+// let firstnumber = parseInt(prompt("Input First Number"));
+// let secondnumber = parseInt(prompt("Input Second Number"));
+// let thirdnumber = parseInt(prompt("Input Third Number"));
 
 
 
-let test_firstnumber = firstnumber > secondnumber && firstnumber > thirdnumber;
-let test_secondnumber = secondnumber >firstnumber  && secondnumber > thirdnumber;
-let test_thirdnumber = thirdnumber > firstnumber && thirdnumber > secondnumber;
+// let test_firstnumber = firstnumber > secondnumber && firstnumber > thirdnumber;
+// let test_secondnumber = secondnumber >firstnumber  && secondnumber > thirdnumber;
+// let test_thirdnumber = thirdnumber > firstnumber && thirdnumber > secondnumber;
 
 
 
-if (test_firstnumber) {
+// if (test_firstnumber) {
 
 
-    alert("The first Number Is Bigger")
+//     alert("The first Number Is Bigger")
     
-} else if(test_secondnumber){
+// } else if(test_secondnumber){
 
-    alert("The Second Number Is Bigger")
+//     alert("The Second Number Is Bigger")
     
-} else if(test_thirdnumber){
+// } else if(test_thirdnumber){
 
-    alert("The Third number is Bigger")
+//     alert("The Third number is Bigger")
 
-} else{
+// } else{
 
-    alert("Two numbers cant be the same")
+//     alert("Two numbers cant be the same")
+// }
+
+
+
+
+
+
+// let president = prompt("President Password")
+// let vice = prompt("Vice Password");
+// let speaker = prompt("Speakers Password")
+// let justice = prompt("Justice Password")
+
+
+// let DB_p = "123456789";
+// let DB_v = "12345678910"
+// let DB_s = "12345"
+// let DB_j= "1234567"
+
+
+// let test_president  = president == DB_p && vice == DB_v || president == DB_p && speaker == DB_s || president == DB_p && justice == DB_j 
+// let test_vice  = vice == DB_v && president == DB_p || vice == DB_p && speaker == DB_s || vice == DB_p && justice == DB_j 
+// let test_speaker  = speaker == DB_s && president == DB_p || speaker == DB_p && vice == DB_v || speaker == DB_p && justice == DB_j
+// let test_justice  = justice == DB_j && president == DB_p || justice == DB_j && vice == DB_v || justice == DB_j && speaker == DB_s  
+
+// if (test_president) {
+
+//     alert("Welcome Mr President")
+    
+// }
+// else if (test_vice) {
+
+//     alert("Welcome Mr Vice President")
+    
+// }
+// else if (test_speaker) {
+
+//     alert("Welcome Mr Speaker")
+    
+// }
+// else if (test_justice) {
+
+//     alert("Welcome Mr Justice")
+    
+// }
+// else {
+
+//     alert("You are not allowed to enter")
+    
+// }
+
+// if (12==13) {
+
+//         console.log("This is the first if statement")
+
+//       if (8==8 ) {
+           
+//             console.log("This is the second if statement")
+//             if (40==67) {
+                  
+//                   console.log("This is the third if statement")
+                  
+//             }else{
+//                   console.log("This is the else statement inside the third if statement")
+//             }
+            
+//       }else{
+            
+//             console.log("This is the else statement inside the second if statement")
+//       }
+      
+// }else{
+
+
+//       console.log("This is the else statement")
+// }
+
+//   var userinput
+
+// do{
+
+//       userinput= prompt("Enter a number or x to exit");
+
+//       switch (userinput) {
+//             case "1": console.log("You entered 1")
+                  
+//                   break;
+//             case "2": console.log("You entered 2")
+                  
+//                   break;   
+            
+//             case "3": console.log("You entered 3")
+                  
+//                   break;
+
+//             case "x":
+//             case "X": console.log("Exiting the game")
+                  
+//                   break;
+
+//             default:console.log("Invalid input, please try again")
+//                   break;
+//       }
+      
+// }while (  userinput != "x" || userinput != "X"); 
+
+// FOR LOOP
+for (let index = 0; index < array.length; index++) {
+      const element = array[index];
+      
+}
+
+// WHILE LOOP
+
+while (true) {
+      // code block to be executed
+      if (1==1) {
+            break; // exit the loop if condition is met
+      }
+      // other code
+      
 }
 
 
+// DO WHILE LOOP
+do {
+      
+} while (condition);
 
 
+// FOR IN LOOP
+for (const key in object) {
+      if (Object.prototype.hasOwnProperty.call(object, key)) {
+            const element = object[key];
+            
+      }
+}
 
+// FOR OF LOOP    
+for (const element of object) {
+      
+}
 
-let president = prompt("President Password")
-let vice = prompt("Vice Password");
-let speaker = prompt("Speakers Password")
-let justice = prompt("Justice Password")
-
-
-let DB_p = "123456789";
-let DB_v = "12345678910"
-let DB_s = "12345"
-let DB_j= "1234567"
-
-
-let test_president  = president == DB_p && vice == DB_v || president == DB_p && speaker == DB_s || president == DB_p && justice == DB_j 
-let test_vice  = vice == DB_v && president == DB_p || vice == DB_p && speaker == DB_s || vice == DB_p && justice == DB_j 
+// FOR EACH LOOP
+array.forEach(element => {
+      
+});
+   
 
 
 
