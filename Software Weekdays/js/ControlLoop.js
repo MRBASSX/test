@@ -1,8 +1,4 @@
 
-
-
-
-
 const Engineers = [
     {
         name:"Michelle",
@@ -38,19 +34,55 @@ const Engineers = [
     },  
 ]
 
+
+
 // for (let index = 0; index < array.length; index++) {
 //     const element = array[index];
     
 // }
 
 
-let  MyArray = [ 1, 2 ,3 ,4 , 5]
+// let  MyArray = [ 1, 2 ,3 ,4 , 5]
 
-console.log(MyArray)
+// console.log(MyArray)
 
-for(let upi = -100 /*Initial*/ ; upi <= -1 /*condition*/ ; upi = upi + 1 /* Update*/ ){
+// for(let upi = -100 /*Initial*/ ; upi <= -1 /*condition*/ ; upi = upi + 1 /* Update*/ ){
 
-    const element = upi;
-   console.log(element);/* Code To Execute*/
+//     const element = upi;
+//    console.log(element);/* Code To Execute*/
 
+// }
+
+
+// let i = 0; /*Initial*/
+
+
+// while ( i <  Engineers.length /*Condition*/){
+
+//     /*Code To Run Here*/
+//     console.log(Engineers[i].name)
+//     console.log(Engineers[i].age)
+//     console.log(Engineers[i].gender)
+//     console.log(Engineers[i].height)
+//     console.log(Engineers)
+
+//     /*Update  */
+//     i = i + 1
+
+
+
+// }
+
+
+// do {
+    
+// } while (condition);
+
+
+let test =  function (g) {
+
+    console.log(g)
+    
 }
+
+Engineers.forEach(test)
