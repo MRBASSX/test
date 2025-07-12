@@ -5,7 +5,16 @@
 
 
 
-// Control Statement Example// This is a simple control statement example in JavaScript
+
+
+
+
+
+
+
+
+
+// Control Statement Example~// This is a simple control statement example in JavaScript
 // It demonstrates the use of if statements
 let condition1 = true; // Change this to false to see the else block in action
 
