@@ -73,16 +73,19 @@ const Engineers = [
 
 // }
 
+//  let i;
 
 // do {
     
-// } while (condition);
-
-
-let test =  function (g) {
-
-    console.log(g)
+//  i =  prompt("Enter A number")
     
-}
+// } while (i != "100");
 
-Engineers.forEach(test)
+
+// let test =  function (g) {
+
+//     console.log(g)
+    
+// }
+
+// Engineers.forEach(test)
