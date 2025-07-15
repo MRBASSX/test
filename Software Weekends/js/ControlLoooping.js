@@ -11,7 +11,7 @@ var child  = document.createElement("div")
 // For LOOP
 
 
-fetch('https://jsonplaceholder.typicode.com/posts',
+fetch('https://jsonplaceholder.typicode.com/posts/1/comments',
         {
         method: 'GET',
         headers: {
