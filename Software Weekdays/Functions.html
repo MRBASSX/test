@@ -4,6 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fuctionitle</title>
+
+
+    <style>
+        .form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+           row-gap: 40px;
+        }
+        .forms{
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        form input[type=email] , input[type=password]{
+           
+            padding: 10px;
+            
+        }
+    </style>
 </head>
 <body>
 
@@ -12,16 +33,18 @@
 
 
 
-    <form  method="post" id="form">
+    <div class="forms">
+        <form  method="post" id="form" class="form">
 
         <label for="">SignIn</label>
 
-        <input type="email" name="email" id="email">
-        <input type="password" name="password" id="password">
+        <input type="email" name="email" id="email"  placeholder="Email">
+        <input type="password" name="password" id="password" placeholder="Password">
 
-        <input type="submit" value="Login">
+        <input type="submit" value="Login" id="send">
 
     </form>
+    </div>
 
   
     

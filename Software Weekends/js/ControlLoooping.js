@@ -30,7 +30,7 @@ fetch('https://jsonplaceholder.typicode.com/posts/1/comments',
 data.forEach(data => {
 
     child.innerHTML =` <div class="box">
-          <div class="img"><img src="images/product-1.jpg" alt="" height="100%" width="100%" ></div>
+          <div class="img"><img src="images/${data.image}" alt="" height="100%" width="100%" ></div>
           <h1>${data.title}</h1>
           <p>${data.body}</p>
         </div>`
