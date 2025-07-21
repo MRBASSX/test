@@ -205,7 +205,7 @@ let children  = document.createElement("div")
 
 Product.forEach(george => {
 
-children .innerHTML = `<div class="box">
+children.innerHTML = `<div class="box">
             <div class="img">
                <img src="images/${george.image}" alt="" height="100%" width="100%">
            </div>
