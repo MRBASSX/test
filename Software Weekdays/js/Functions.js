@@ -39,7 +39,40 @@ let child = document.createElement("video")
 
 
 // Functions With Parameters
+let Product = [
+  {
+    name:"Makeups",
+    price:300,
+    image:"product-1.jpg",
+    color:"brown",
+    desc:"Makeups for beauty"
 
+  },
+   {
+     name:"Hair Dye",
+    price:300,
+    image:"product-2.jpg",
+    color:"brown",
+    desc:"Makeups for beauty"
+
+  },
+   {
+     name:"Nails Long",
+    price:300,
+    image:"product-3.jpg",
+    color:"brown",
+    desc:"Makeups for beauty"
+
+  },
+   {
+     name:"Wig Long",
+    price:300,
+    image:"product-4.jpg",
+    color:"brown",
+    desc:"Makeups for beauty"
+
+  }
+]
 
 let Engineers = [
   {
@@ -131,6 +164,9 @@ function SignIn(email,password) {
 
 
 
+
+
+
  
   
 }
@@ -154,3 +190,33 @@ try {
 
 
 // CallBack Function 
+
+// let getMyReturn = 
+
+// console.log(getMyReturn(1,2))
+
+
+
+var content = document.getElementById("content");
+let children  = document.createElement("div")
+
+
+
+
+Product.forEach(george => {
+
+children .innerHTML = `<div class="box">
+            <div class="img">
+               <img src="images/${george.image}" alt="" height="100%" width="100%">
+           </div>
+            <h1>${george.name}</h1>
+             <small>Ghc ${george.price}</small>
+            <p> ${george.desc}</p>
+   
+          </div>`
+
+    content.appendChild(children)
+    children  = document.createElement("div")
+
+  
+ })
