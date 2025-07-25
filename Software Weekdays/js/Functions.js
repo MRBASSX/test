@@ -5,6 +5,8 @@
 
 
 
+
+
 let test = document.getElementById("test")
 let child = document.createElement("video")
 
@@ -205,18 +207,27 @@ let Product = [
 var content = document.getElementById("content");
 let children  = document.createElement("div")
 
+ let range = document.getElementById("range")
+ let rangevalue = document.getElementById('rangevalue')
 
-  let Myfilter  = (Product)=>{
 
-   return  Product.price <=320 &&  Product.price <=330
+  let Myfilter  = (Product,price)=>{
+
+   return  Product.price <=0 &&  Product.price <= price
 
   }
 
-Product
-.filter(Myfilter)
+function Updatedproduct(price) {
+
+
+  let FilteredProduct = Product.filter(Myfilter(price))
+
+
+  FilteredProduct
+
 .map((george,index) => {
 
-
+children.innerHTML = ""
 
 children.innerHTML = `<div class="box" key="${index}" onclick="DoSomething(${george.id})">
             <div class="img">
@@ -235,7 +246,11 @@ children.innerHTML = `<div class="box" key="${index}" onclick="DoSomething(${geo
 
   
  })
+  
+}
 
+
+Updatedproduct(range.value)
 
 
 function DoSomething(id) {
@@ -262,19 +277,19 @@ let Detail = Product.find(key=>{
 
 
 
- let range = document.getElementById("range")
- let rangevalue = document.getElementById('rangevalue')
+
+
 
  range.addEventListener("input",(event)=>{
 
   event.preventDefault();
 
   rangevalue.innerHTML = range.value
+  Updatedproduct(range.value)
+
 
 
  })
-
-
 
 
 
