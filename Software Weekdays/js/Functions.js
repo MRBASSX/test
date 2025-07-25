@@ -167,7 +167,7 @@ let Product = [
   {
     id:"001",
     name:"Makeups",
-    price:300,
+    price:310,
     image:"product-1.jpg",
     color:"brown",
     desc:"Makeups for beauty"
@@ -175,8 +175,8 @@ let Product = [
   },
    {
     id:"002",
-     name:"Hair Dye",
-    price:300,
+    name:"Hair Dye",
+    price:320,
     image:"product-2.jpg",
     color:"brown",
     desc:"Makeups for beauty"
@@ -184,8 +184,8 @@ let Product = [
   },
    {
     id:"003",
-     name:"Nails Long",
-    price:300,
+    name:"Nails Long",
+    price:330,
     image:"product-3.jpg",
     color:"brown",
     desc:"Makeups for beauty"
@@ -193,8 +193,8 @@ let Product = [
   },
    {
     id:"004",
-     name:"Wig Long",
-    price:300,
+    name:"Wig Long",
+    price:340,
     image:"product-4.jpg",
     color:"brown",
     desc:"Makeups for beauty"
@@ -206,13 +206,19 @@ var content = document.getElementById("content");
 let children  = document.createElement("div")
 
 
+  let Myfilter  = (Product)=>{
+
+   return  Product.price <=320 &&  Product.price <=330
+
+  }
+
+Product
+.filter(Myfilter)
+.map((george,index) => {
 
 
-Product.forEach(george => {
 
-
-
-children.innerHTML = `<div class="box" onclick="DoSomething(${george.id})">
+children.innerHTML = `<div class="box" key="${index}" onclick="DoSomething(${george.id})">
             <div class="img">
                <img src="images/${george.image}" alt="" height="100%" width="100%">
            </div>
@@ -232,24 +238,45 @@ children.innerHTML = `<div class="box" onclick="DoSomething(${george.id})">
 
 
 
- function DoSomething(id) {
+function DoSomething(id) {
 
-  
-Product.forEach(key=>{
 
-  let data = "00"+id
+let Detail = Product.find(key=>{
 
-  if (condition) {
+  let code = "00"+id 
 
-   return 
+  if (code == (key.id)) {
+
+  //  console.log(key)
+   return key;
     
   }
   
 
 })
 
-
+ console.log(Detail)
   
  }
+
+
+
+
+ let range = document.getElementById("range")
+ let rangevalue = document.getElementById('rangevalue')
+
+ range.addEventListener("change",(event)=>{
+
+  event.preventDefault();
+  const formData = new FormData(range)
+  const data = Object.fromEntries(formData.entries())
+  rangevalue.innerHTML = data.range
+
+
+ })
+
+
+
+
 
 
