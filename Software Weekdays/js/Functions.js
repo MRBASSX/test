@@ -265,12 +265,11 @@ let Detail = Product.find(key=>{
  let range = document.getElementById("range")
  let rangevalue = document.getElementById('rangevalue')
 
- range.addEventListener("change",(event)=>{
+ range.addEventListener("input",(event)=>{
 
   event.preventDefault();
-  const formData = new FormData(range)
-  const data = Object.fromEntries(formData.entries())
-  rangevalue.innerHTML = data.range
+
+  rangevalue.innerHTML = range.value
 
 
  })
