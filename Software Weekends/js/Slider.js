@@ -20,7 +20,7 @@ function SlideShow() {
     }
 
     slides[slideindex-1].style.display = "block"
-    setTimeout(SlideShow,2000)    
+    setTimeout(SlideShow,5000)    
 }
 
 
