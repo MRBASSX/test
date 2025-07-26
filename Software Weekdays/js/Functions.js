@@ -211,23 +211,29 @@ let children  = document.createElement("div")
  let rangevalue = document.getElementById('rangevalue')
 
 
-  let Myfilter  = (Product,price)=>{
+  let Myfilter  = (Product)=>{
 
-   return  Product.price <=0 &&  Product.price <= price
+   return  Product.price >= 0 &&  Product.price <= price
 
   }
 
-function Updatedproduct(price) {
-
-
-  let FilteredProduct = Product.filter(Myfilter(price))
-
-
-  FilteredProduct
-
-.map((george,index) => {
+function Updatedproduct(data) {
 
 children.innerHTML = ""
+
+  let FilteredProduct = Product.filter((product)=>{
+
+   return  product.price >=0 &&  product.price <= data
+
+  }
+  )
+ 
+
+
+
+  FilteredProduct.map((george,index) => {
+
+
 
 children.innerHTML = `<div class="box" key="${index}" onclick="DoSomething(${george.id})">
             <div class="img">
@@ -242,7 +248,7 @@ children.innerHTML = `<div class="box" key="${index}" onclick="DoSomething(${geo
 
 
     content.appendChild(children)
-    children  = document.createElement("div")
+    // children  = document.createElement("div")
 
   
  })
