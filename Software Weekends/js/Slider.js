@@ -1,10 +1,13 @@
 
- let slideindex = 0;
-SlideShow();
+var slideindex = 1;
+SlideShow(slideindex);
 
-function SlideShow() {
+function SlideShow(n) {
 
     let slides = document.getElementsByClassName("slide")
+
+    if (n > slides.length) {slideindex = 1}
+    if (n < 1) {slideindex = slides.length}
 
     for (let index = 0; index < slides.length; index++) {
         
@@ -13,15 +16,26 @@ function SlideShow() {
         
     }
 
-    slideindex++
-    
-   if (slideindex > slides.length) {
-        slideindex = 1
-    }
-
     slides[slideindex-1].style.display = "block"
-    setTimeout(SlideShow,5000)    
+
+
 }
+
+
+
+function NextSlider(n) {
+
+    SlideShow(slideindex += n);
+
+
+    console.log(slideindex)
+    
+}
+
+
+
+
+
 
 
 
