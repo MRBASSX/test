@@ -41,3 +41,10 @@
             column-gap: 15px;
             list-style: none;
         }
+
+
+    @media  (max-width:600px) {
+        
+    } 
+        
+    
