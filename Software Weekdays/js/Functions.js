@@ -242,6 +242,7 @@ children.innerHTML = `<div class="box" key="${index}" onclick="DoSomething(${geo
             <h1   >${george.name}</h1>
              <small>Ghc ${george.price}</small>
             <p> ${george.desc}</p>
+            <p onclick="AddCart(${george.id})"> Add To Cart</p>
 
    
           </div>`
