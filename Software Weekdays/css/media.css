@@ -7,5 +7,42 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
     gap: 15px;
+}
+
+
+@media screen and (max-width:600px) {
+
+
+   body{
+     background-color: blue;
+     color: azure;
+   }
+
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center;
+    align-items: center; */
+    justify-content: start;
+    gap: 15px;
+}
+    
+}
+
+
+@media screen  and  (max-width:600px){
+    .nav-desktop{
+        display: none;
+    }
+    
+}
+
+@media screen  and  (min-width:600px){
+    .nav-mobile{
+        display: none;
+    }
+    
 }
