@@ -3,6 +3,14 @@
 // Type Of Functions
 
 // AnonyMous in
+let MyFun  = function (){
+
+
+    alert("Hi")
+    
+}
+
+MyFun()
 
 // Arrow Function
 
@@ -45,6 +53,9 @@
 
 
 // CallBack Function
+
+
+
  
 
 
