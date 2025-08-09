@@ -15,13 +15,13 @@
 
 // Creating A Function
 
-let MyFunction = function (){
+// let MyFunction = function (){
 
 
-    alert("HI ,I am Okay");
+//     alert("HI ,I am Okay");
 
 
-}
+// }
 
 
 
@@ -29,7 +29,7 @@ let MyFunction = function (){
 // Calling Function
 
 
-MyFunction();
+// MyFunction();
 
 
 
