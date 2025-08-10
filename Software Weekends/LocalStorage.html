@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LocalStorage</title>
+    <script src="https://kit.fontawesome.com/f85bf48a66.js" crossorigin="anonymous"></script>
+    <style>
+        .fa-house ,.fa-cart-plus{
+            background-color: blue;
+            color: black;
+            font-size: 10px;
+            box-shadow:  0px 0px 120px rgb(194, 1, 11);
+            border-radius: 1rem;
+            transition: all 1s;
+            animation-name: fa-house;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+
+
+            &:hover {
+
+                color: yellow;
+                font-size: 100px;
+                  background-color: rgb(0, 255, 42);
+
+            }
+        }
+
+
+        @keyframes fa-house {
+
+            from 0% {
+
+                color: aliceblue;
+                font-size: 50 px;
+                 padding: 20px;
+                   background-color: rgb(255, 0, 0);
+
+            }
+
+            10% {
+                color: rgb(9, 9, 119);
+                font-size: 50 px;
+                 padding: 20px;
+                   background-color: rgb(255, 238, 0);
+            }
+
+            20% {
+                color: rgb(207, 207, 13);
+                font-size: 50 px;
+                 padding: 20px;
+                   background-color: rgb(9, 255, 0);
+            }
+
+            30% {
+                color: rgb(42, 165, 58);
+                font-size: 50 px;
+                 padding: 20px;
+                   background-color: rgb(0, 255, 234);
+            }
+
+            40% {
+                color: rgb(255, 0, 0);
+                font-size: 50 px;
+                 padding: 20px;
+                   background-color: rgb(0, 26, 255);
+            }
+
+            50% {
+                color: darkolivegreen;
+                font-size: 50 px;
+                 padding: 20px;
+                   background-color: rgb(255, 0, 255);
+            }
+
+            to 100% {
+                color: rgb(141, 71, 255);
+                font-size: 50 px;
+                 padding: 20px;
+                   background-color: rgb(0, 4, 255);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <script src="js/LocalStorage.js"></script>
+    <i class="fa-solid fa-house"></i>
+    <i class="fa-solid fa-cart-plus"></i>
+    <i class="fa-solid fa-car-battery"></i>
+<i class="fa-sharp fa-thin fa-cart-shopping"></i>
+</body>
+
+</html>
