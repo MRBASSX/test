@@ -1,5 +1,5 @@
 
-const DataSet  = [
+const products  = [
 
   {
     id:1,
@@ -59,36 +59,67 @@ const DataSet  = [
 
 // const DataList  = localStorage.setItem("new","[]");
 
-let DataList = localStorage.getItem("new");
+if (!localStorage.getItem("cart")) {
+  
+   localStorage.setItem("cart",JSON.stringify([]))
+}
+let cart = JSON.parse(localStorage.getItem("cart"));
+
+// 
+console.log(cart)
+
+
+let AddCart  = (productId)=>{
+
+  let product  = products.find(elements => elements.id == productId );
+  if (cart.length == 0) {
+
+    cart.push(product)
+
+  }else{
+   let checking  = cart.find(elements => elements.id == productId );
+   if(checking == undefined){
+
+     cart.push(product)
+   }
+
+  }
+
+ 
+ localStorage.setItem("cart",JSON.stringify(cart))
+}
+console.log(AddCart(2))
 
 // find  
 
-function AddCart(productId){
-let product = DataSet.find(product =>product.id == productId)
-let NewDataList = [product]
-// console.log(NewDataList)
-if (localStorage.getItem("new")== null) {
+// function AddCart(productId){
+// let product = DataSet.find(product =>product.id == productId)
+// let NewDataList = [product]
+// // console.log(NewDataList)
+// if (localStorage.getItem("cart")== null) {
 
-    localStorage.setItem("new",JSON.stringify(NewDataList))
-}else{
+//     localStorage.setItem("cart",JSON.stringify(NewDataList))
 
-        NewDataList =  JSON.parse(DataList)
-     let ProductExist = NewDataList.find(product =>product.id == productId)
-   if (ProductExist == undefined) {
-     console.log(NewDataList)
-    NewDataList.push(product)
-     localStorage.setItem("new",JSON.stringify(NewDataList))
-   }
+// }else{
+
+//         NewDataList =  JSON.parse(DataList)
+//      let ProductExist = NewDataList.find(product =>product.id == productId)
+//    if (ProductExist == undefined) {
+//      console.log(NewDataList)
+//     NewDataList.push(product)
+//      localStorage.setItem("new",JSON.stringify(NewDataList))
+//    }
 
   
-}
-// DataList.push(product)
- return product
-}
+// }
+// // DataList.push(product)
+//  return product
+// }
 
 
 
-console.log(AddCart(3))
+// console.log(AddCart(1))
+// localStorage.removeItem("cart")
 
 // function Total(prev,next){
 
@@ -97,7 +128,7 @@ console.log(AddCart(3))
 
 // }
 
-let  getEachPrice  = DataSet.map(product => product.price)
+let  getEachPrice  = products.map(product => product.price)
 
 let TotalProductPrice = getEachPrice.reduce((prev,next) => prev + next)
 
